@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Good Surpirse</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+    <h1 id="PageTitle" align="center">Your Good Surpirse</h1>
+
+    <header id="introheader">
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+    <script src="/react_header_render.js">
+    </script>
+
+    <h1>Now aren't you glad you came here?</h1>
+    <script type="text/javascript">
+        var imgArray = new Array()
+
+        for (i = 0; i < 12; i++) {
+            imgArray[i] = new Image();
+            imgArray[i].src = '/pictures/pretty/picture' + i + '.jpg';
+        }
+    </script>
+
+    <p align="center"><img src="/pictures/pretty/picture0.jpg" name="slide" width="720" height="540"></p>
+    <script type="text/javascript">
+        var step = 0;
+
+        function slideit() {
+            document.images.slide.src = eval("imgArray" + "[" + step + "]" + ".src")
+            if (step < 11)
+                step++;
+            else
+                step = 0
+            setTimeout("slideit()", 3000)
+        }
+        slideit()
+    </script>
+
+    <h3>Your good surprise</h3>
+
+    <p>Just a pretty song called "Lavendar Hills" by <a href- "https://www.amazon.com/Lavender-Hills/dp/B0013PDGWU">Brian Crain</a> to pretty pictures.
+    </p>
+
+    <div id="player">
+        <audio autoplay hidden>
+         <source src="music/lavendarhills.mp3" type="audio/mpeg">
+                If you're reading this, audio isn't supported. 
+        </audio>
+    </div>
+</body>
+<footer>
+    <ul>
+        <li><a href="#PageTitle">Back to Top</a></li>
+    </ul>
+</footer>
+
+</html>

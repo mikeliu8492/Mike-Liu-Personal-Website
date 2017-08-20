@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Tech Internship Summer with IMO</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+    <h1 id="PageTitle" align="center">My First Tech Internship Summer with IMO</h1>
+
+    <header id="introheader">
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+    <script src="/react_header_render.js">
+    </script>
+
+    <h1>A Summer in UIUC's Research Park</h1>
+    <script type="text/javascript">
+        var imgArray = new Array()
+
+        for (i = 0; i < 6; i++) {
+            imgArray[i] = new Image();
+            imgArray[i].src = '/pictures/imo/picture' + i + '.jpg';
+        }
+    </script>
+
+    <p align="center"><img src="/pictures/imo/picture0.jpg" name="slide" width="720" height="540"></p>
+    <script type="text/javascript">
+        var step = 0;
+
+        function slideit() {
+            document.images.slide.src = eval("imgArray" + "[" + step + "]" + ".src")
+            if (step < 5)
+                step++;
+            else
+                step = 0
+            setTimeout("slideit()", 3000)
+        }
+        slideit()
+    </script>
+
+    <h3>The summer I learned SQL Well</h3>
+
+    <p>This was such an educational and fun summer, where I underwent a hybridized role in HIM and SQL development for QA. And I got a chance to mentor someone who is now going to med school because of our collaboration. And get well fed for 3 weeks by the
+        company (one of which was Oreo week).
+    </p>
+
+    <p>Thank you Blake, Shelly, Jane, Theresa, Katherine, John, Dr. Frank, and everyone else at IMO for taking me in when I was an unknown commodity in this industry. You have helped me grow in this field and for that I am grateful. I am a musical man and below is a song
+        for you.
+    </p>
+
+    <h3>Lilo and Rosie</h3>
+
+    <p>
+        As quoted per the Youtube video description:
+
+        <blockquote>
+            <p><i>Lilo the Siberian husky is a wonderful surrogate to our new foster [kitten], little Rosie. Rosie was really lethargic and unresponsive after the first night. So we decided to let her cuddle extensively with Lilo (the husky). Lilo has always had
+            an innate motherly instinct, but she really surprised us when she went full surrogate mode! Even letting Rosie suckle on her and stimulating her to eliminate! Lilo has never had puppies of her own, and never will. But motherhood may just be
+            her calling :)</i></p>
+        </blockquote>
+    </p>
+
+    <br>
+    <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/_ucqJECx1AY" frameborder="0" allowfullscreen></iframe></p>
+    <br>
+    <p></p>
+
+</body>
+<footer>
+    <ul>
+        <li><a href="#PageTitle">Back to Top</a></li>
+    </ul>
+</footer>
+
+</html>

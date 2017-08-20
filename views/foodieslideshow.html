@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Photographic Interests</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+    <h1 id="PageTitle" align="center">Photographic Interests</h1>
+
+    <header id="introheader">
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+    <script src="/react_header_render.js">
+    </script>
+
+    <h1>Food!</h1>
+    <script type="text/javascript">
+        var imgArray = new Array()
+
+        for (i = 0; i < 9; i++) {
+            imgArray[i] = new Image();
+            imgArray[i].src = '/pictures/foodie/picture' + i + '.jpg';
+        }
+    </script>
+
+    <p align="center"><img src="/pictures/foodie/picture0.jpg" name="slide" width="720" height="540"></p>
+    <script type="text/javascript">
+        var step = 0;
+
+        function slideit() {
+            document.images.slide.src = eval("imgArray" + "[" + step + "]" + ".src")
+            if (step < 8)
+                step++;
+            else
+                step = 0
+            setTimeout("slideit()", 3000)
+        }
+        slideit()
+    </script>
+
+    <h3>The Shutterbug</h3>
+
+    <p>I'm sorry I couldn't resist posting up some great food pictures I have taken in the past.
+    </p>
+
+</body>
+<footer>
+    <ul>
+        <li><a href="#PageTitle">Back to Top</a></li>
+    </ul>
+</footer>
+
+</html>

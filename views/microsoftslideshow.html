@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Pilgrimage for Any Computer Science Student</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+
+<body>
+    <h1 id="PageTitle" align="center">A Pilgrimage for Any Computer Science Student</h1>
+
+    <header id="introheader">
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+    <script src="/react_header_render.js">
+    </script>
+
+    <h1>West Coast Best Coast!</h1>
+    <script type="text/javascript">
+        var imgArray = new Array()
+
+        for (i = 0; i < 16; i++) {
+            imgArray[i] = new Image();
+            imgArray[i].src = '/pictures/microsoft/picture' + i + '.jpg';
+        }
+    </script>
+
+    <img src="/pictures/microsoft/picture0.jpg" name="slide" width="720" height="540">
+    <script type="text/javascript">
+        var step = 0;
+
+        function slideit() {
+            document.images.slide.src = eval("imgArray" + "[" + step + "]" + ".src")
+            if (step < 15)
+                step++;
+            else
+                step = 0
+            setTimeout("slideit()", 3000)
+        }
+        slideit()
+    </script>
+
+    <h3>Seriously, unless you have already committed to another intern/full-time offer in writing, if just given the chance to interview here just do it to take in the environment!
+    </h3>
+
+    <p>I literally jumped at this opportunity when I heard I got a chance to intern with the company that aspires to "empower every person and every organization on the planet to achieve more". I learned so much this summer and crossed so many things off
+        my bucket list. Web API's don't seem so scary when you know how to manipulate the resource endpoint. It has opened my eyes to new possibilities I could not have imagined before in my career journey.
+    </p>
+
+    <p>Thank you to Maggie Bott, the WSD team (that I interned for), and the internship/recuirtment coordination team for everything, a truly unforgettable summer.
+    </p>
+
+
+</body>
+<footer>
+    <ul>
+        <li><a href="#PageTitle">Back to Top</a></li>
+    </ul>
+</footer>
+
+</html>
