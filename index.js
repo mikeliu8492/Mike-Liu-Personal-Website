@@ -5,10 +5,11 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 
 var port = 5000;
+var app = express();
 
 app.set('port', (process.env.PORT || port));
 
-var app = express()
+
 
 //View Engine
 app.set('views', path.join(__dirname, 'views'))
