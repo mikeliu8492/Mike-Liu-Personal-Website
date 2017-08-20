@@ -21,7 +21,7 @@
     <script type="text/javascript">
         var imgArray = new Array()
 
-        for (i = 0; i < 9; i++) {
+        for (i = 0; i < 8; i++) {
             imgArray[i] = new Image();
             imgArray[i].src = '/pictures/foodie/picture' + i + '.jpg';
         }
@@ -33,7 +33,7 @@
 
         function slideit() {
             document.images.slide.src = eval("imgArray" + "[" + step + "]" + ".src")
-            if (step < 8)
+            if (step < 7)
                 step++;
             else
                 step = 0
