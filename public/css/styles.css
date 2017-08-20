@@ -28,14 +28,18 @@ header ul {
 nav ul li,
 header ul li {
     display: inline;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 header {
     border-top: 1px solid #000080;
     border-bottom: 1px solid #000080;
     font-size: 1em;
+}
+
+header ul li+li {
+    border-left: 2px solid #000080
 }
 
 a {
