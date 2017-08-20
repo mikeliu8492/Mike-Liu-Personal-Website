@@ -7,7 +7,7 @@ var rootElementHead =
         ),
         React.createElement('li', { class: "headerlist" },
             React.createElement('a', {
-                href: 'mailto:mikeliu2@illinois.edu'
+                href: 'mailto:mikeliu8492@gmail.com'
             }, 'Email')
         ),
         React.createElement('li', { class: "headerlist" },
