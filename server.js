@@ -4,9 +4,12 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 
-var port = 3000;
-
+var port = 5000;
 var app = express()
+
+app.set('port', (process.env.PORT || port));
+
+
 
 //View Engine
 app.set('views', path.join(__dirname, 'views'))
@@ -25,6 +28,6 @@ app.use(express.static(path.join(__dirname + '/public')));
 app.use(express.static(path.join(__dirname, '/viewmodels')));
 app.use(express.static(path.join(__dirname, '/scripts')));
 
-app.listen(port, function() {
-    console.log('Server started on port:  ' + port)
+app.listen(app.get('port'), function() {
+    console.log('Server started on port:  ' + app.get('port'))
 });

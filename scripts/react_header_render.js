@@ -41,7 +41,7 @@ var rootElementHead =
             }, 'A Very Nice (Musical?) Surprise')
         )
     )
-    /*
+    
     var rootElementFoot = React.createElement('ul', {},
             React.createElement('li', {},
                 React.createElement('a', {
@@ -49,7 +49,7 @@ var rootElementHead =
                 }, 'Back to Top')
             )
         )
-     */
+     
 
 ReactDOM.render(rootElementHead, document.getElementById('introheader'))
-    //ReactDOM.render(rootElementFoot, document.getElementById('myfooter'))
+ReactDOM.render(rootElementFoot, document.getElementById('myfooter'))
