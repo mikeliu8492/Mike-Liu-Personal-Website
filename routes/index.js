@@ -33,7 +33,7 @@ router.get('/imo', function(req, res, next) {
     res.render('imoslideshow.html');
 })
 
-router.get('/foodie', function(req, res, next) {
+router.get('/food', function(req, res, next) {
     res.render('foodieslideshow.html');
 })
 
