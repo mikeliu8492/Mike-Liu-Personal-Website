@@ -3,43 +3,58 @@ body {
     width: 80%;
 }
 
-nav ul,
-footer ul {
-    font-family: 'Arial', 'Helvetica', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-
-nav ul li,
-footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul,
 header ul {
-    font-family: 'Arial', 'Helvetica', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
     font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-nav ul li,
-header ul li {
-    display: inline;
-    padding-right: 20px;
-    padding-left: 20px;
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000080;
 }
 
-header {
-    border-top: 2px solid #000080;
-    border-bottom: 2px solid #000080;
-    font-size: 1em;
+footer li {
+    float: left;
 }
 
-header ul li+li {
-    border-left: 2px solid #000080
+footer li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000080;
+}
+
+li a:hover {
+    background-color: #111;
 }
 
 a {
@@ -52,6 +67,25 @@ a:hover {
     color: #00b3b3;
 }
 
+
+header li a:hover {
+    background-color: #111;    
+    text-decoration: underline;
+    color: white;
+}
+
+
+footer li a:hover {
+    background-color: #111;    
+    text-decoration: underline;
+    color: white;
+}
+
+
+
+
+
+
 h1 {
     font-size: 3em;
     font-family: 'Arial', 'Helvetica', 'Sans-Serif';
@@ -63,64 +97,10 @@ p {
     color: #333;
 }
 
-footer {
-    border-top: 2px solid #000080;
-    border-bottom: 2px solid #000080;
-    font-size: 1em;
-}
-
 .needContrast {
     border: 2px solid black;
 }
 
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-    20% {
-        left: 0;
-    }
-    25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-    75% {
-        left: -300%;
-    }
-    95% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
-}
-
-#slider {
-    overflow: hidden;
-}
-
-#slider figure img {
-    width: 30%;
-    float: left;
-}
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 10s slider infinite;
-}
 
 audio::-internal-media-controls-download-button {
     display: none;
