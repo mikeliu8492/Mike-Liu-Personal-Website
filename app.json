@@ -2,7 +2,7 @@
     "name": "Mike Liu's Homepage",
     "description": "A personal website project",
     "repository": "https://github.com/mikeliu8492/Mike-Liu-Personal-Website",
-    "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+    "logo": "https://cdn.jsdelivr.net/gh/heroku/node-js-getting-started/public/node.svg",
     "keywords": ["node", "express", "heroku"],
     "image": "heroku/nodejs"
 }
